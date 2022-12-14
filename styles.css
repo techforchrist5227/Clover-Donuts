@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap'); 
+
+.navbar{
+    margin-top: 2rem;
+
+}
+.navbar-toggler {float: unset; margin-right: 0; 
+    border-radius: 50%;
+     }
+
+.icon-bar { margin-left: auto; margin-right: auto; }
+
+.navbar-brand {
+    height: 120px;
+    width: 120px;
+    border-radius: 55%;
+}
+
+.navbar-nav{
+    margin: auto;
+    font-size: 2.5rem;
+    font-family: 'Caveat', cursive, Arial, Helvetica, sans-serif;
+    
+}
+
+.nav-link{
+    padding: 0 15rem 0 0;
+    color:#e05875;
+}
+
+.nav-item{
+    margin-right: 3.5rem;
+    
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    margin: 2rem;
+    color: #e05875;
+    font-family: "Dosis";
+}
+
+@media (max-width: 900px) {
+    .flex-container {
+        display: flex;
+      flex-direction: column;
+      align-self: center;
+      
+    }
+  }
+
+  @media (max-width: 900px) {
+    #greeting{
+      padding: 10rem 0rem;
+      min-width: 93vw;
+      
+    }
+  }
+
+  @media (max-width: 900px) {
+    p{
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+
+  @media (max-width: 900px) {
+    #store_front_image {
+      flex-direction: column;
+      width: 500px;
+      margin-top: 30px;
+      min-width: 93vw;
+      min-height: 85vh;
+    }
+  }
+
+#greeting{
+    background-color: rgb(247, 247, 249);
+    margin-right: 3rem;
+    padding-top: 20px;
+    border-color: #bcebb1;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7%;
+}
+
+
+h1{
+    text-align: center;
+    justify-content: center;
+}
+
+p{
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+    max-width: max-content;
+}
+
+#store_front_image{
+    width: 45vw;
+    height: 55vh;
+    border-color: #ebb1d9;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 7%;
+    
+    
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: #e05875;
+  } 
+  
+
+  .fade {
+    opacity: 0;
+    -webkit-transition-duration: 5s;
+    transition-duration: 5s;
+}
+
+  .carousel{
+    width: 95vw;
+    height: 85vh;
+    margin: auto;
+  }
+
+  #carouselExampleControls{
+    max-height: 10px;
+  }
+
+  @media (height: 260px) {
+    .navbar-brand {
+      position:relative;
+      left:-100em;
+      transition:all 1000ms ease 250ms;
+    }
+    
+    .scrolled .navbar-brand {
+      left:0;
+    }
+  }
+
+  .carousel-control-prev-icon{
+    background-image: url("cd_pics/clear-donut.png");
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .carousel-control-next-icon{
+    background-image: url("cd_pics/clear-donut.png");
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+
+  .d-block{
+    height: 100vh;
+  }
