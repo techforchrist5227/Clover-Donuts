@@ -1,20 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Courgette&family=Caveat:wght@500&family=Copse:wght@400&family=Dosis&display=swap');
+@import url('Gelato/Gelato.ttf');
 
-.navbar{
-    margin-top: 2rem;
 
+@font-face {
+  font-family: "Gelato";
+  src: url("gelato-webfont.woff");
+  src:url("gelato-webfont.woff2");
+  font-family: "Sugar-Donut";
+  src:url("sugar_donut_line-webfont.woff");
+  src:url("sugar_donut_line-webfont.woff2");
 }
-.navbar-toggler {float: unset; margin-right: 0; 
+
+@media only screen and (max-width: 1300px) {
+  .store_description{
+    flex-direction: column;
+    font-weight: 100;
+    font-size: 8px;
+    line-height: 1rem;
+    height:50%;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .frappes_outside{
+    flex-direction: column;
+    height:45%;
+    width:75%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #front_of_store{
+    height: 75vh;
+    margin:auto;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  #welcome:first-child {
+    font-size:10ch;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #welcome:first-child {
+    font-size:8ch;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #welcome:first-child {
+    font-size:6ch;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #welcome:first-child {
+    font-size:4.5ch;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .store_description p{
+    flex-direction: column;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 4rem;
+    width: 80%;
+    margin:auto;
+  }
+  .store_description img{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  #hot_food_details{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+}
+  #veggie_option{
+    display: flex;
+    flex-wrap: wrap;
+    width:75%;
+    margin:auto;
+  }
+
+  .flex-container-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    
+    width:75%;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .carousel-control-prev-icon {
+    background-image: url("cd_pics/clear-donut.png");
+    font-size: .55rem;
     border-radius: 50%;
-     }
+    position: absolute;
+  }
+}
+
+
+@media only screen and (max-width: 600px){
+ .carousel-control-next-icon{
+    background-image: url("cd_pics/clear-donut.png");
+    font-size: .55rem;
+    border-radius: 50%;
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .fam_photo{
+    max-width: fit-content;
+    margin-left:10em;
+    width:100%;
+  }
+  .family_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width: 100%;
+    }
+  .family_section_description_1  p{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    text-align: center;
+    margin:auto;
+    width: 55%;
+    float: none;
+  }
+  .family_section_description_2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1em;
+    text-align: center;
+    margin:auto;
+    width: 45%;
+    float: none;
+  }
+}
 
 .icon-bar { margin-left: auto; margin-right: auto; }
 
 .navbar-brand {
-    height: 120px;
-    width: 120px;
+    height: 5.5rem;
+    width: 5.5rem;
     border-radius: 55%;
 }
+
 
 .navbar-nav{
     margin: auto;
@@ -23,9 +166,18 @@
     
 }
 
+
+.navbar{
+  background-color: #e05875;
+  opacity:.95;
+  margin:3px;
+}
+
+
 .nav-link{
     padding: 0 15rem 0 0;
-    color:#e05875;
+    color:#75d885;
+    
 }
 
 .nav-item{
@@ -33,91 +185,114 @@
     
 }
 
-.flex-container{
-    display:flex;
-    flex-direction: row;
-    margin: 2rem;
-    color: #e05875;
-    font-family: "Dosis";
-}
-
-@media (max-width: 900px) {
-    .flex-container {
-        display: flex;
-      flex-direction: column;
-      align-self: center;
-      
-    }
-  }
-
-  @media (max-width: 900px) {
-    #greeting{
-      padding: 10rem 0rem;
-      min-width: 93vw;
-      
-    }
-  }
-
-  @media (max-width: 900px) {
-    p{
-      text-align: center;
-      justify-content: center;
-    }
-  }
-
-
-  @media (max-width: 900px) {
-    #store_front_image {
-      flex-direction: column;
-      width: 500px;
-      margin-top: 30px;
-      min-width: 93vw;
-      min-height: 85vh;
-    }
-  }
-
-#greeting{
-    background-color: rgb(247, 247, 249);
-    margin-right: 3rem;
-    padding-top: 20px;
-    border-color: #bcebb1;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 7%;
-}
-
-
-h1{
-    text-align: center;
-    justify-content: center;
-}
-
-p{
-    font-weight: 100;
-    text-align: center;
-    font-size: 20px;
-    max-width: max-content;
-}
-
-#store_front_image{
-    width: 45vw;
-    height: 55vh;
-    border-color: #ebb1d9;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 7%;
-    
-    
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
+.container1{
+  position: relative;
   
-  .custom-toggler.navbar-toggler {
-    border-color: #e05875;
-  } 
+}
+
+
+#welcome{
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 5%;
+  z-index: 10;
+  color:#e05875;
+  opacity: .95;
+  font-weight: bold;
+  font-size: 6rem;
+  width:100%;
+  font-family:"Sugar-Donut",Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#front_of_store {
+  display: block;
+  width: 95%;
+  margin: 2.5rem auto;
+  z-index: 10;
+}
+
+
+.store_description{
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-size:  3.8ch;
+  color: rgb(58, 57, 57);
+  background-color: rgb(243, 244, 245);
+  font-weight: 500;
+  max-width: 90%;
+  z-index: 100;
+  margin: 3rem auto;
+  left: 0;
+  right: 0;
+  bottom: .5%;
+  line-height: 7ch;
+  height: 50%;
+}
+
+
+.frappes_outside{
+  height:15em;
+  width: 50%;
+  margin:auto;
+}
+
+body{
+  overflow: none;
+}
+
+.flex-container-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10rem auto;
+  font-family: "Dosis";
+  width: 95%;
+  max-width: max-content;
+
+}
+
+
+#veggie_option{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  max-width: 1500px;
+  width:100%;
+}
+
+
+#hot_food_details{
+  display: flex;
+  flex-direction: row;
+  font-size: 2em;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ .navbar-toggler-icon {
+  background-image: url(
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217, 39, 131)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M3 8h54M2 16h46M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+.nav-link:hover {
+  color:white;
   
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #86e395;
+  border-radius: 50%;
+  border-width: 3px;
+  padding: 5%;
+} 
 
   .fade {
     opacity: 0;
@@ -126,44 +301,111 @@ p{
 }
 
   .carousel{
-    width: 95vw;
+    width: 100vw;
     height: 85vh;
     margin: auto;
   }
 
-  #carouselExampleControls{
-    max-height: 10px;
-  }
 
-  @media (height: 260px) {
-    .navbar-brand {
-      position:relative;
-      left:-100em;
-      transition:all 1000ms ease 250ms;
-    }
-    
-    .scrolled .navbar-brand {
-      left:0;
-    }
-  }
+  
 
   .carousel-control-prev-icon{
     background-image: url("cd_pics/clear-donut.png");
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
+    width:7em;
+    height: 6em;
     position: absolute;
   }
-
+  
+  
+  
+  
+  
   .carousel-control-next-icon{
     background-image: url("cd_pics/clear-donut.png");
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
+    width:7em;
+    height: 6em;
     position: absolute;
   }
 
 
   .d-block{
     height: 100vh;
+    width: 7vw;
   }
+
+  .fam_photo{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    max-width:100vw;
+    height:auto;
+    border-radius: 25%;
+    border-style: solid;
+    border-color: rgb(157, 79, 23);
+    box-shadow: 10px 10px 10px 10px #888888;
+  }
+
+  .family_section{
+    background-color: rgb(245, 249, 249);
+    max-width: 100%;
+  }
+
+  #family_section_description_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: center;
+    float: left;
+    margin:0;
+    font-size: 3.5ch;
+    line-height: 1.5em;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    font-family: Copse, Verdana, Geneva, Tahoma, sans-serif,Arial, Helvetica, sans-serif;
+    width:45%;
+    padding: 0;
+  }
+
+  #family_section_description_2 p{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    text-align: center;
+    float: right;
+    margin:0;
+    font-size: 3.5ch;
+    line-height: 1.5em;
+    font-weight: 100;
+    letter-spacing: .2rem;
+    font-family: Copse, Verdana, Geneva, Tahoma, sans-serif,Arial, Helvetica, sans-serif;
+    width:40%;
+    padding:0;
+  }
+  
+  #about_family{
+    margin: auto;
+    width:100%;
+  }
+
+  #map-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Set the size of the div element that contains the map */
+#map {
+  display: flex;
+  flex-direction: row;
+  height: 400px; /* The height is 400 pixels */
+  width: 50%; /* The width is the width of the web page */
+  margin: auto;
+}
+
+#location-description{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+
+}
