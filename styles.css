@@ -124,6 +124,30 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+  
+  #map-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    text-align: center;
+  }
+  #map{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  #location-description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 @media only screen and (max-width: 600px){
  .carousel-control-next-icon{
     background-image: url("cd_pics/clear-donut.png");
@@ -406,6 +430,14 @@ body{
   #map-container{
     display: flex;
     flex-direction: row;
+    margin: 3rem 2rem;
+    text-align: center;
+  }
+
+  #our-location{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   /* Set the size of the div element that contains the map */
@@ -413,16 +445,17 @@ body{
   display: flex;
   flex-direction: row;
   height: 400px; /* The height is 400 pixels */
-  width: 50%; /* The width is the width of the web page */
-  margin: auto;
+  width: 100%; /* The width is the width of the web page */
+  margin: auto ;
 }
 
 #location-description{
   display: flex;
+  justify-content: center;
   flex-direction: row;
-  width: 50%;
-  margin: auto;
-
+  margin: auto 2rem;
+  text-align: center;
+  width: 100%;
 }
 
 #soldout{
@@ -461,4 +494,17 @@ body{
   width: 95%;
   max-width: max-content;
 
+}
+
+hr {
+  border-style: solid;
+  margin:0;
+  border-width: 1px;
+}
+
+footer{
+  margin:auto;
+  padding:1.25rem;
+  text-align: center;
+  background-color: #86e395;
 }
