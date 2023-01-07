@@ -278,7 +278,7 @@
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 5%;
+  top: 1.5%;
   z-index: 10;
   color:#e05875;
   opacity: .95;
@@ -579,7 +579,70 @@ hr {
   background-color: rgb(242, 240, 240);
 }
 
+#menu_title{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 1.25rem auto;
+  text-align: center;
+}
 
+#donuts_menu_container{
+  display: inline-grid;
+  grid-template-areas:
+  'menu main main';
+  width: 100%;
+}
+
+.donuts_menu{
+  width:30vw;
+  max-width: max-content;
+  margin: auto 3rem;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  
+}
+
+#menu_items{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap:1.5rem;
+  margin: 2rem auto;
+  width: 50%;
+  max-width: min-content;
+  
+}
+
+.card{
+  width:15vw;
+  background-color: rgb(244, 240, 240);
+  background: none;
+  border: none;
+}
+
+.glaze_twist{
+  width:9vw !important;
+}
+.card-text{
+  text-align: center;
+  justify-content: center;
+  font-size: 1.23em;
+  margin:auto;
+  
+}
+
+.pricing{
+  font-size: 20px;
+}
+
+.card-body{
+  padding:1.5rem;
+}
+
+.card-img-top{
+  width:13vw;
+  margin: auto;
+  text-align: center;
+}
 
 footer{
   position: sticky;
