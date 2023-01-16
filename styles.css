@@ -644,7 +644,7 @@ hr {
 #donuts_menu_container{
   display: grid;
   width: 100%;
-  
+  justify-content: center;
 }
 
 .donuts_menu{
@@ -662,6 +662,7 @@ hr {
   grid-template-rows: 1fr 1fr 1fr;
   margin: auto;
   width: 100%;
+  justify-content: center;
 }
 
  ul.pricing{
@@ -698,15 +699,17 @@ hr {
   border: none;
   justify-content: center;
   margin:auto;
+  align-items:center;
 }
 
-.glaze_twist{
-  width:9vw !important;
+img.card-img-top{
+  min-width: 30% !important;
 }
 
 .cinn_twist{
   border-radius: 30%;
-  max-width: fit-content !important;
+  max-width: 30vw !important;
+  min-width:20%;
   margin: auto;
 }
 .card-text{
@@ -733,17 +736,19 @@ hr {
 
 .card-body{
   display: grid;
-  padding:2rem;
   margin: auto;
   max-width: fit-content;
 }
 
 .card-img-top{
-  width:50%;
+  max-width: max-content;
+  width: 39%;
+  
   margin: auto;
   text-align: center;
-  padding: 6%;
-}
+  padding:auto;
+  justify-content: center;
+  }
 
 footer{
   position: sticky;
