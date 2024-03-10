@@ -2,6 +2,9 @@ const navtoggler = document.getElementsByClassName("navbar-toggler")[0];
 
 function toClear(){
     navtoggler.style.color="#e05875";
+    if(navtoggler.style.color =="#e05875"){
+        navtoggler.style.color="#ffffff"
+    }
 } 
 
 const navToGreen = document.getElementsByClassName("nav-link")[navLinks]; 

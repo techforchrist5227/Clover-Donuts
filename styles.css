@@ -282,9 +282,8 @@
 
 .navbar-brand {
 
-    height: 8.5rem;
-    width: 10rem;
-    border-radius: 55%;
+    height: 7.5rem;
+     width: 10rem;
 }
 
 
@@ -298,15 +297,13 @@
 
 .navbar{
 
-  background-color: #e05875;
+  background-color: #a0b945;
   opacity:.95;
-  margin:3px;
 }
 
 
 .nav-link{
     padding: 0 15rem 0 0;
-    color:#75d885;
     
 }
 
@@ -419,7 +416,7 @@ body{
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: #86e395;
+  border-color: #fff;
   border-radius: 50%;
   border-width: 3px;
   padding: 5%;
@@ -672,22 +669,12 @@ hr {
   padding: 1em;
 }
 
-#menu_items_subs{
-  display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
-  margin: auto;
-  width: 100%;
-  max-width: fit-content;
-}
-
 .frapps{
   width:100%;
   height:35em;
   margin-bottom: 100px;
   
 }
-
-
 
 #menu_items_frapps{
   width:100%;
